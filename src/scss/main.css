@@ -1,0 +1,151 @@
+/*
+0 - 600px:          Phone
+600- 900px:         Tablet Portrait
+900 - 1200px:       Tablet Landscape
+(1200 - 1800px)     is where our normal styles apply
+1800px + :          Big Desktop
+*/
+/*
+$breakpoint argument choices:
+- phone
+- tab-port
+- tab-land
+- big-desktop
+
+ORDER: BASE + Typography > generl layout + grid > page layout > components
+*/
+.container {
+  text-align: center;
+  padding: 3rem;
+}
+
+.heading-main {
+  font-size: 7rem;
+  font-weight: 100;
+}
+
+.heading-secondary {
+  font-size: 4rem;
+  font-weight: 200;
+}
+
+.header {
+  border-top: 3rem solid #c2185b;
+  background-color: #e91e63;
+  min-height: 95vh;
+  position: relative;
+  overflow: hidden;
+}
+.header__text {
+  font-weight: 200;
+  font-size: 2.5rem;
+  line-height: 2;
+}
+.header__link {
+  position: absolute;
+  top: 0;
+  right: 5rem;
+}
+.header__description {
+  background-color: #ffffff;
+  color: #212121;
+  padding: 4rem 7rem;
+  text-align: left;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  box-shadow: 0 0 10px 3px rgba(33, 33, 33, 0.2);
+}
+.header__description-box {
+  width: -moz-max-content;
+  width: max-content;
+  margin: 3rem auto;
+  border: 2rem solid #c2185b;
+}
+.header__description-heading {
+  font-size: 4rem;
+  font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande", "Lucida Sans", Arial, sans-serif;
+  font-weight: 200;
+  margin: 1rem 0 2rem;
+}
+.header__list {
+  color: #212121;
+  font-size: 2rem;
+  line-height: 1.5;
+}
+.header__list-item {
+  font-weight: 400;
+}
+
+.footer {
+  background-color: #212121;
+  min-height: 5vh;
+  padding: 1 rem;
+}
+.footer__text {
+  text-align: center;
+  font-size: 2rem;
+  line-height: 3;
+}
+.footer__text i {
+  color: #ff4081;
+}
+
+.button-github {
+  background-color: #212121;
+  color: #ffffff;
+  padding: 4rem 0.7rem;
+  padding-bottom: 4.5rem;
+  -webkit-clip-path: polygon(100% 0, 100% 100%, 50% 80%, 0 100%, 0 0);
+          clip-path: polygon(100% 0, 100% 100%, 50% 80%, 0 100%, 0 0);
+  z-index: 99;
+  transition: all 0.15s linear;
+}
+.button-github i {
+  font-size: 3rem;
+  padding: 0 1rem;
+}
+.button-github:hover {
+  padding: 4.7rem 0.7rem;
+  padding-bottom: 4.7rem;
+}
+
+#menuToggle input#checkbox {
+  display: none;
+}
+#menuToggle input#checkbox:checked ~ .toggle .bar:nth-child(1) {
+  transform: rotate(-45deg) translate(-5px, 6px);
+}
+#menuToggle input#checkbox:checked ~ .toggle .bar:nth-child(2) {
+  opacity: 0;
+}
+#menuToggle input#checkbox:checked ~ .toggle .bar:nth-child(3) {
+  transform: rotate(45deg) translate(-5px, -6px);
+}
+#menuToggle input#checkbox:checked ~ ul {
+  transform: scale(1);
+}
+#menuToggle .toggle {
+  cursor: pointer;
+}
+#menuToggle .toggle .bar {
+  display: block;
+  width: 25px;
+  height: 2px;
+  margin-bottom: 5px;
+  background: #333;
+  transition: all 0.3s ease-in-out;
+}
+#menuToggle ul {
+  list-style-type: none;
+  transform: scale(0);
+  transition: transform 0.5s ease-in-out;
+}
+#menuToggle ul li {
+  padding: 10px 0;
+}
+#menuToggle ul li a {
+  text-decoration: none;
+  color: #333;
+}/*# sourceMappingURL=main.css.map */

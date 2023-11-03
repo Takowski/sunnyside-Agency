@@ -1,0 +1,52 @@
+#menuToggle {
+    input#checkbox {
+        display: none;
+
+        &:checked {
+            ~ .toggle {
+                .bar {
+                    &:nth-child(1) {
+                        transform: rotate(-45deg) translate(-5px, 6px);
+                    }
+
+                    &:nth-child(2) {
+                        opacity: 0;
+                    }
+
+                    &:nth-child(3) {
+                        transform: rotate(45deg) translate(-5px, -6px);
+                    }
+                }
+            }
+
+            ~ ul {
+                transform: scale(1);
+            }
+        }
+    }
+
+    .toggle {
+        cursor: pointer;
+        .bar {
+            display: block;
+            width: 25px;
+            height: 2px;
+            margin-bottom: 5px;
+            background: #333;
+            transition: all 0.3s ease-in-out;
+        }
+    }
+
+    ul {
+        list-style-type: none;
+        transform: scale(0);
+        transition: transform 0.5s ease-in-out;
+        li {
+            padding: 10px 0;
+            a {
+                text-decoration: none;
+                color: #333;
+            }
+        }
+    }
+}
