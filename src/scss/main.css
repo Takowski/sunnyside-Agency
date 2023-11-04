@@ -309,6 +309,10 @@ $breakpoint argument choices:
 
 ORDER: BASE + Typography > generl layout + grid > page layout > components
 */
+body {
+  width: 100%;
+}
+
 .container {
   text-align: center;
   padding: 3rem;
@@ -330,8 +334,20 @@ header nav {
   display: flex;
   flex-direction: row;
 }
+header nav ul li a {
+  color: black;
+}
+header nav .burger {
+  color: black;
+}
+header .hero img {
+  width: 100%;
+}
+header .hero .hero-text h1 {
+  color: black;
+}
+
 .footer {
-  background-color: #212121;
   min-height: 5vh;
   padding: 1 rem;
 }
@@ -341,26 +357,7 @@ header nav {
   line-height: 3;
 }
 .footer__text i {
-  color: #ff4081;
-}
-
-.button-github {
-  background-color: #212121;
-  color: #ffffff;
-  padding: 4rem 0.7rem;
-  padding-bottom: 4.5rem;
-  -webkit-clip-path: polygon(100% 0, 100% 100%, 50% 80%, 0 100%, 0 0);
-          clip-path: polygon(100% 0, 100% 100%, 50% 80%, 0 100%, 0 0);
-  z-index: 99;
-  transition: all 0.15s linear;
-}
-.button-github i {
-  font-size: 3rem;
-  padding: 0 1rem;
-}
-.button-github:hover {
-  padding: 4.7rem 0.7rem;
-  padding-bottom: 4.7rem;
+  color: black;
 }
 
 #menuToggle {

@@ -1,4 +1,5 @@
 header {
+
    nav {
       position: absolute;
       z-index: 1;
@@ -8,26 +9,25 @@ header {
       ul {
          li {
             a {
-               // Styles for the main navigation links
+               color: black; // Styles for the main navigation links
             }
          }
       }
 
       .burger {
-         // Styles for the burger menu
+         color: black; // Styles for the burger menu
       }
    }
 
    .hero {
       img {
-         
+         width: 100%; // Styles for the hero image 
 
-         // Styles for the hero image
       }
 
       .hero-text {
          h1 {
-            // Styles for the hero text
+            color: black; // Styles for the hero text
          }
       }
    }

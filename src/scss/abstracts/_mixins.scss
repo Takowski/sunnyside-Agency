@@ -22,9 +22,9 @@ ORDER: BASE + Typography > generl layout + grid > page layout > components
 
 @mixin respond($breakpoint) {
    @if $breakpoint == phone-vsmall {
-      @media only screen and (max-width: 24.37em) {
+      @media only screen and (max-width: 23.44em) {
          @content;
-      } //390px
+      } //375px
    }
 
    @if $breakpoint == phone-small {
