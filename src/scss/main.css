@@ -329,19 +329,31 @@ body {
 }
 
 header nav {
-  position: absolute;
-  z-index: 1;
+  height: 120px;
   display: flex;
   flex-direction: row;
+  justify-content: space-between;
+  background-color: hsl(200, 100%, 62%);
 }
-header nav ul li a {
+header nav .logo {
+  height: 120px;
+}
+header nav .nav__ul {
+  display: none;
+}
+header nav .nav__ul li a {
   color: black;
 }
-header nav .burger {
+header nav #menuToggle {
   color: black;
 }
 header .hero img {
+  height: 418px;
   width: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+  -o-object-position: bottom;
+     object-position: bottom;
 }
 header .hero .hero-text h1 {
   color: black;
@@ -361,7 +373,6 @@ header .hero .hero-text h1 {
 }
 
 #menuToggle {
-  position: fixed;
   right: 0px;
   top: 15px;
 }
