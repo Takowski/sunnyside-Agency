@@ -57,3 +57,20 @@ ORDER: BASE + Typography > generl layout + grid > page layout > components
       } //1800px
    }
 }
+
+ 
+@mixin fraunces-hero {
+   font-family: 'Fraunces', serif;
+   font-weight: 900;
+   font-style: normal;
+   font-size: 4.5rem;
+   line-height: 1.2;
+   letter-spacing: 0.4rem;
+   text-transform: uppercase;
+   @include respond(tab-port) {
+      font-size: 3.5rem;
+   }
+   @include respond(phone) {
+      font-size: 2.5rem;
+   }
+}

@@ -40,10 +40,15 @@ header {
 
     .hero__text {
       position: absolute;
-      top: 20%;
+      top: 16%;
 
       h1 {
-        color: white; // Styles for the hero text
+        @include fraunces-hero ;
+        text-align: center;
+        color: white;
+       
+
+         
       }
     }
     .hero__arrow {
