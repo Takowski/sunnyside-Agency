@@ -330,26 +330,21 @@ body {
 
 header nav {
   height: 120px;
-  padding-top: 40px;
+  max-height: 120px;
+  padding-top: 20px;
   -moz-column-gap: 100px;
        column-gap: 100px;
   display: flex;
   flex-direction: row;
   justify-content: space-around;
-  align-items: center;
+  align-items: last flex-start;
   background-color: hsl(200, 100%, 62%);
-}
-header nav .logo {
-  height: 120px;
 }
 header nav .nav__ul {
   display: none;
 }
 header nav .nav__ul li a {
   color: black;
-}
-header nav #menuToggle {
-  margin-top: 30px;
 }
 header .hero img {
   height: 418px;
@@ -370,6 +365,11 @@ header .hero .hero__arrow {
   color: white;
   position: absolute;
   top: 40%;
+}
+
+#menuToggle {
+  position: static;
+  margin-top: 30px;
 }
 
 .footer {
@@ -398,11 +398,13 @@ header .hero .hero__arrow {
   transform: rotate(45deg) translate(-5px, -6px);
 }
 #menuToggle input#checkbox:checked ~ ul {
+  display: block;
   transform-origin: top;
   transform: scale(1);
 }
 #menuToggle .toggle {
-  position: fixed;
+  position: absolute;
+  top: 20px;
   right: 15px;
   cursor: pointer;
 }

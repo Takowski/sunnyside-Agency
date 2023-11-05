@@ -20,6 +20,7 @@
       }
 
       ~ ul {
+        display: block;
         transform-origin: top;
         transform: scale(1);
       }
@@ -27,7 +28,8 @@
   }
 
   .toggle {
-    position: fixed;
+    position: absolute;
+    top: 20px;
     right: 15px;
     cursor: pointer;
     .bar {
