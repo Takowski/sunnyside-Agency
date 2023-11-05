@@ -330,9 +330,13 @@ body {
 
 header nav {
   height: 120px;
+  padding-top: 40px;
+  -moz-column-gap: 100px;
+       column-gap: 100px;
   display: flex;
   flex-direction: row;
-  justify-content: space-between;
+  justify-content: space-around;
+  align-items: center;
   background-color: hsl(200, 100%, 62%);
 }
 header nav .logo {
@@ -345,7 +349,7 @@ header nav .nav__ul li a {
   color: black;
 }
 header nav #menuToggle {
-  color: black;
+  margin-top: 30px;
 }
 header .hero img {
   height: 418px;
@@ -355,8 +359,17 @@ header .hero img {
   -o-object-position: bottom;
      object-position: bottom;
 }
-header .hero .hero-text h1 {
-  color: black;
+header .hero .hero__text {
+  position: absolute;
+  top: 25%;
+}
+header .hero .hero__text h1 {
+  color: white;
+}
+header .hero .hero__arrow {
+  color: white;
+  position: absolute;
+  top: 40%;
 }
 
 .footer {
@@ -372,10 +385,6 @@ header .hero .hero-text h1 {
   color: black;
 }
 
-#menuToggle {
-  right: 0px;
-  top: 15px;
-}
 #menuToggle input#checkbox {
   display: none;
 }
@@ -402,7 +411,7 @@ header .hero .hero-text h1 {
   width: 25px;
   height: 2px;
   margin-bottom: 5px;
-  background: #333;
+  background: white;
   transition: all 0.3s ease-in-out;
 }
 #menuToggle ul {
@@ -415,5 +424,5 @@ header .hero .hero-text h1 {
 }
 #menuToggle ul li a {
   text-decoration: none;
-  color: #333;
+  color: white;
 }/*# sourceMappingURL=main.css.map */

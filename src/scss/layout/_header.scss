@@ -1,46 +1,56 @@
 header {
-
-nav {
-   height: 120px; 
-   display: flex;
+  nav {
+    height: 120px;
+    padding-top: 40px;
+    column-gap: 100px;
+    display: flex;
    flex-direction: row;
-   justify-content: space-between;
-   background-color: $hero-blue;
-   
-   .logo {
+    justify-content: space-around;
+    align-items: center;
+
+    background-color: $hero-blue;
+
+    .logo {
       height: 120px; // Styles for the logo
-   }
+    }
 
-      .nav__ul {
-         display: none;
-         li {
-            a {
-               color: black; // Styles for the main navigation links
-            }
-         }
+    .nav__ul {
+      display: none;
+      li {
+        a {
+          color: black; // Styles for the main navigation links
+        }
       }
+    }
 
-      #menuToggle {
-         color: black; // Styles for the burger menu
+    #menuToggle {
+      margin-top: 30px;
+
+      // Styles for the burger menu
+    }
+  }
+
+  .hero {
+    
+    img {
+      height: 418px;
+      width: 100%; // Styles for the hero image
+      object-fit: cover;
+      object-position: bottom;
+    }
+
+    .hero__text {
+      position: absolute;
+      top: 25%;
+
+      h1 {
+        color: white; // Styles for the hero text
       }
-   }
-
-   .hero {
-      img {
-         height: 418px;
-         width: 100%; // Styles for the hero image 
-         object-fit: cover;
-         object-position: bottom;
-
-
-
-
-      }
-
-      .hero-text {
-         h1 {
-            color: black; // Styles for the hero text
-         }
-      }
-   }
+    }
+    .hero__arrow {
+      color: white;
+      position: absolute;
+      top: 40%;
+    }
+  }
 }
